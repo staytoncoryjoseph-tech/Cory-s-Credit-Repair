@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cory's Credit Repair</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="Corys_Credit_Repair_Logo.png" alt="Cory's Credit Repair Logo" />
+    <h1>Cory's Credit Repair</h1>
+    <p class="tagline">World's Best Credit Repair</p>
+  </header>
+
+  <nav>
+    <button id="menuButton" onclick="toggleMenu()">☰ Menu</button>
+    <ul id="dropdown" style="display: none;">
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#welcome">Welcome Letter</a></li>
+      <li><a href="#policy">Policies</a></li>
+      <li><a href="#booking">Book Appointment</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+  </nav>
+
+  <section id="pricing">
+    <h2>Pricing Menu</h2>
+    <p><strong>$150</strong> — Credit Report Review Session (Initial Consultation)</p>
+    <p><strong>$99/month</strong> — Ongoing Credit Repair Service</p>
+    <p>First 15 days: Free $10 equity reward</p>
+  </section>
+
+  <section id="forms">
+    <h2>Client Forms</h2>
+    <p>Please download, print, and bring the following to your appointment:</p>
+    <ul>
+      <li><a href="Card_Authorization_Form.pdf" download>Card Authorization Form (PDF)</a></li>
+      <li><a href="Client_Intake_Form.pdf" download>Client Intake Form (PDF)</a></li>
+      <li><a href="Service_Agreement.pdf" download>Service Agreement (PDF)</a></li>
+      <li><a href="No_Refund_Policy.pdf" download>No Refund Policy (PDF)</a></li>
+      <li><a href="Disclaimer_and_Policies.pdf" download>Disclaimer & Policies (PDF)</a></li>
+    </ul>
+  </section>
+
+  <section id="welcome">
+    <h2>Welcome Letter</h2>
+    <p>Welcome to Cory's Credit Repair — where we are committed to Done, Fair, Legal, and Lasting credit solutions. We're here to guide you every step of the way with professionalism and care.</p>
+  </section>
+
+  <section id="policy">
+    <h2>Business Policies & Disclaimer</h2>
+    <p><strong>Disclaimer:</strong> All services are conducted in accordance with CROA compliance. We do not guarantee credit score increases.</p>
+    <p><strong>Service Agreement:</strong> By enrolling, you agree to the monthly billing policy. No refunds will be issued once the month begins. Canceling mid-month still requires full payment for that month.</p>
+    <p><strong>Late Payment:</strong> A $50 fee will apply to any late payments.</p>
+  </section>
+
+  <section id="booking">
+    <h2>Book an Appointment</h2>
+    <iframe src="Booking_Calendar.html" width="100%" height="400px" style="border: 2px solid #FFD700; border-radius: 8px;"></iframe>
+    <p><em>After booking, you'll receive a confirmation email and text reminder 24 hours before your session.</em></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="/submit-message" method="POST">
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone"><br><br>
+
+      <label for="message">Explain your main credit issues:</label><br>
+      <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <section id="reviews">
+    <h2>Google Reviews</h2>
+    <div>
+      <p><strong>Linda Akers</strong> — ⭐⭐⭐⭐⭐ (5 stars)<br>Best credit repair service I've ever had by a Native woman. Very professional. <em>(September 9, 2025)</em></p>
+    </div>
+    <div>
+      <p><strong>Frank Smalls</strong> — ⭐⭐⭐⭐½ (4.5 stars)<br>The most professional credit repair service I've ever had.</p>
+    </div>
+    <div>
+      <p><strong>Sally Summers</strong> — ⭐⭐½ (2.5 stars)<br>I thought it would be a little bit more professional than it was. Not impressed.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Cory's Credit Repair. Done. Fair. Legal. Lasting.
+  </footer>
+</body>
+</html>
